@@ -79,6 +79,14 @@ img {
     cursor: pointer;
 }
 
+.main-button:hover {
+    background-color: rgba(30, 144, 255, 0.8);
+}
+
+.main-button:active {
+    background-color: rgba(30, 144, 255, 0.6);
+}
+
 .span-info {
     display: flex;
     align-items: center;
@@ -144,6 +152,15 @@ img {
     font-size: 18px;
     color: #222;
     text-decoration: none;
+    transition: 0.4s ease color;
+}
+
+.box-heading:hover {
+    color: #1e90ff;
+}
+
+.box-heading:active {
+    opacity: 0.6;
 }
 
 h3 {
@@ -169,10 +186,6 @@ h3 {
     line-height: 16px;
     color: #888;
     transition: 0.4s ease color;
-}
-
-.box-bottom:hover {
-    color: #666;
 }
 
 .span-time {
@@ -220,4 +233,12 @@ h3 {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
+}
+
+.info-link:hover {
+    background-color: rgba(30, 144, 255, 0.8);
+}
+
+.info-link:active {
+    background-color: rgba(30, 144, 255, 0.6);
 }
