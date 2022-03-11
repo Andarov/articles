@@ -49,6 +49,7 @@ img {
 .picture-page {
     width: 100%;
     max-width: 600px;
+    padding: 40px;
     background-image: url("../img/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
