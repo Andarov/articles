@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: #fff;
+    background-color: #000;
     font-family: "Bebas Neue", "Arial", sans-serif;
     font-style: normal;
     line-height: 22px;
@@ -50,7 +50,7 @@ img {
     width: 100%;
     max-width: 600px;
     background-image: url("../img/hero.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
