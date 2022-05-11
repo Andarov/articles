@@ -55,7 +55,7 @@ a {
 
 /* FIRST_PART */
 
-.picture-page {
+.all__picture-page {
     width: 100%;
     max-width: 600px;
     padding: 40px;
@@ -65,39 +65,39 @@ a {
     background-position: center center;
 }
 
-.picture-page-box {
+.picture-page__box {
     margin: 326px auto;
     width: 285px;
 }
 
-.main-heading {
+.picture-page__heading {
     font-size: 24px;
     font-weight: normal;
     line-height: 29px;
 }
 
-.main-heading-one {
+.picture-page__heading--one {
     margin: 0;
     margin-bottom: 24px;   
     color: #fff;
 }
 
-.main-button {
+.picture-page__button {
     border: 0;
     background-color: #1e90ff;
     padding: 12px 24px;
     cursor: pointer;
 }
 
-.main-button:hover {
+.picture-page__button:hover {
     background-color: rgba(30, 144, 255, 0.8);
 }
 
-.main-button:active {
+.picture-page__button:active {
     background-color: rgba(30, 144, 255, 0.6);
 }
 
-.span-info {
+.button__info {
     display: flex;
     align-items: center;
     font-weight: normal;
@@ -107,7 +107,7 @@ a {
     color: #FFFFFF;
 }
 
-.span-info::before {
+.button__info::before {
     width: 20px;
     height: 19px;
     background-image: url(../img/star.svg);
@@ -119,20 +119,25 @@ a {
 
 /* SECOND_PART */
 
-.info-page {
+.all__info-page {
     width: 100%;
     max-width: 600px;
     padding: 54px;
     background-color: #fff;
 }
 
-.info-page-container {
+.info-page__container {
     width: 100%;
     max-width: 492px;
 }
 
+.info-page__heading {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+}
 
-.main-heading-two {
+.info-page__heading--two {
     color: #222;
     margin: 0;
     padding-bottom: 24px;
@@ -141,23 +146,34 @@ a {
 
 /* BOXES */
 
-.boxes {
+.info-page__boxes {
     padding-top: 24px;
     padding-bottom: 24px;
 }
 
-.box {
+.boxes__box {
     width: 492px;
     display: flex;
     margin-bottom: 10px;
 }
 
-.heading {
+.box__img {
+    width: 160px;
+    height: auto;
+    border-radius: 4px;
+    margin-right: 16px;
+}
+
+.box__info {
+    padding-top: 16px;
+}
+
+.info__heading {
     margin: 0;
     margin-bottom: 4px;
 }
 
-.box-heading {
+.info__link-heading {
     font-weight: normal;
     font-size: 18px;
     color: #222;
@@ -165,30 +181,15 @@ a {
     transition: 0.4s ease color;
 }
 
-.box-heading:hover {
+.info__link-heading:hover {
     color: #1e90ff;
 }
 
-.box-heading:active {
+.info__link-heading:active {
     opacity: 0.6;
 }
 
-h3 {
-    margin: 0;
-}
-
-.box-img {
-    width: 160px;
-    height: auto;
-    border-radius: 4px;
-    margin-right: 16px;
-}
-
-.box-info {
-    padding-top: 16px;
-}
-
-.box-bottom {
+.box__bottom {
     display: flex;
     align-items: center;
     font-weight: normal;
@@ -198,7 +199,7 @@ h3 {
     transition: 0.4s ease color;
 }
 
-.span-time {
+.bottom__time {
     display: flex;
     align-items: center;
     margin-right: 25px;
@@ -212,7 +213,7 @@ h3 {
     letter-spacing: 0;
 }
 
-.span-time::before {
+.bottom__time::before {
     width: 16px;
     height: 16px;
     background-image: url(../img/clock.svg);
@@ -222,7 +223,7 @@ h3 {
     content: "";
 }
 
-.span-seem {
+.bottom__seem {
     display: flex;
     align-items: center;
     font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -235,7 +236,7 @@ h3 {
     letter-spacing: 0;
 }
 
-.span-seem::before {
+.bottom__seem::before {
     width: 16px;
     height: 16px;
     background-image: url(../img/visit.svg);
@@ -245,7 +246,7 @@ h3 {
     content: "";
 }
 
-.info-link {
+.info-page__link {
     width: 100%;
     padding: 12px;
     background-color: #1e90ff;
@@ -261,11 +262,11 @@ h3 {
     cursor: pointer;
 }
 
-.info-link:hover {
+.info-page__link:hover {
     background-color: rgba(30, 144, 255, 0.8);
 }
 
-.info-link:active {
+.info-page__link:active {
     background-color: rgba(30, 144, 255, 0.6);
 }
 
@@ -276,7 +277,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
-    .picture-page {
+    .all__picture-page {
         background-image: url("../img/hero@2x.jpg");
     }
 
