@@ -56,8 +56,7 @@ a {
 /* FIRST_PART */
 
 .all__picture-page {
-    width: 100%;
-    max-width: 600px;
+    width: 50%;
     padding: 40px;
     background-image: url("../img/hero.jpg");
     background-size: cover;
@@ -67,7 +66,8 @@ a {
 
 .picture-page__box {
     margin: 326px auto;
-    width: 285px;
+    width: 100%;
+    max-width: 285px;
 }
 
 .picture-page__heading {
@@ -120,8 +120,7 @@ a {
 /* SECOND_PART */
 
 .all__info-page {
-    width: 100%;
-    max-width: 600px;
+    width: 50%;
     padding: 54px;
     background-color: #fff;
 }
@@ -152,7 +151,8 @@ a {
 }
 
 .boxes__box {
-    width: 492px;
+    width: 100%;
+    max-width: 492px;
     display: flex;
     margin-bottom: 10px;
 }
@@ -281,4 +281,219 @@ only screen and (                min-resolution: 2dppx) {
         background-image: url("../img/hero@2x.jpg");
     }
 
+}
+
+@media only screen and (max-width: 1200px) {
+    .picture-page__box {
+        margin: 200px auto;
+    }
+
+    .box__img {
+        width: 120px;
+        height: auto;
+    }
+
+    .box__info {
+        padding-top: 8px;
+    }
+
+    .info__link-heading {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .picture-page__box {
+        margin: 150px auto;
+    }
+
+    .picture-page__heading {
+        margin-bottom: 18px;
+        font-size: 20px;
+    }
+
+    .picture-page__button {
+        padding: 10px;
+    }
+
+    .button__info::before{
+        width: 15px;
+        height: 15px;
+    }
+
+    .button__info {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .box__img {
+        width: 110px;
+        height: auto;
+    }
+
+    .box__info {
+        padding-top: 5px;
+    }
+
+    .info__link-heading {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .box__bottom {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .all {
+        flex-wrap: wrap;
+    }
+
+    .all__picture-page {
+        width: 100%;
+    }
+
+    .all__info-page {
+        width: 100%;
+    }
+
+    .info-page__container {
+        width: 100%;
+        max-width: 849px;
+    }
+
+    .picture-page__heading {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .picture-page__button {
+        padding: 10px 16px;
+    }
+
+    .button__info {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .button__info::before {
+        width: 18px;
+        height: 16px;
+    }
+
+    .boxes__box {
+        width: 100%;
+        max-width: 741px;
+    }
+
+    .box__img {
+        width: 160px;
+        height: auto;
+    }
+
+    .box__info {
+        padding-top: 16px;
+    }
+
+    .info__link-heading {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .picture-page__box {
+        margin: 200px auto;
+    }
+
+    .all__info-page {
+        padding: 30px;
+    }
+
+    .picture-page__box {
+        margin: 150px auto;
+    }
+
+    .box__img {
+        width: 120px;
+        height: auto;
+    }
+
+    .box__info {
+        padding-top: 8px;
+    }
+
+    .info__link-heading {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .boxes__box {
+        flex-wrap: wrap;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #999;
+    }
+
+    .info-page__boxes {
+        padding-top: 16px;
+        padding-bottom: 14px;
+    } 
+
+    .box__img {
+        width: 140px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .all__info-page {
+        padding: 20px;
+    }
+
+    .picture-page__heading {
+        margin-bottom: 18px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .picture-page__button {
+        padding: 10px;
+    }
+
+    .button__info::before{
+        width: 15px;
+        height: 15px;
+    }
+
+    .button__info {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .info-page__heading--two {
+        font-size: 18px;
+        line-height: 22px;
+        padding-bottom: 10px;
+    }
+
+    .box__info {
+        padding-top: 5px;
+    }
+
+    .info__link-heading {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .box__bottom {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .info-page__link {
+        font-size: 12px;
+    }
 }
